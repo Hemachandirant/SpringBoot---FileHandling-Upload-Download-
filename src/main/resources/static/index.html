@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Spring - Uploading Multipart File</title>
+</head>
+<body>
+	<div style="border:2px solid black; padding:30px; margin:30px;">
+		<h1>Uploading File</h1>
+		<form action="/upload" method="post" enctype="multipart/form-data">
+			<label> Select a file :</label> <input type="file" name="file" >
+			<button type="submit">Upload</button>
+		</form>
+		<br>
+		<br> 
+	</div>
+	
+	<div style="border:2px solid black; padding:30px; margin:30px;">
+		<h1>Download File</h1>
+		<form action="/download" method="get">
+			<label> Enter a filename :</label> <input type="text" id="filename" name="filename">
+			<button type="submit">Download</button>
+		</form>
+		<br>
+		<br> 
+	</div>
+</body>
+</html>
